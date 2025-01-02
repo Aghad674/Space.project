@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space Platform</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                background-image: url('1329016.png');
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                color: #ffffff;
+    
+            }
+
+            h1 {
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 5px rgb(142, 193, 238);
+            }
+
+            div {
+                background-color: rgba(255, 255, 255, 0.369);
+                text-align: center;
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                padding: 10px;
+                margin: 20px auto;
+                width: 80%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+            }
+
+            .button {
+                padding: 10px 20px;
+                margin: 10px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #ffffff;
+                text-transform: uppercase;
+                width: 120px;
+            }
+
+            .login {
+                background-color: #2ab12e;
+            }
+
+            .signup {
+                background-color: #00b3ff;
+            }
+
+            .button:hover {
+                opacity: 0.9;
+            }
+
+            #demo {
+                margin-top: 20px;
+                font-size: 18px;
+                text-shadow: 1px 1px 3px #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome !</h1>
+        <h1>Space Information Platform</h1>
+
+        <div>
+            <pre>Unlock the mysteries of the universe with our unique platform! ✨
+
+Embark on a journey to explore new worlds among stars and planets.
+Stay updated with fascinating articles, stunning images, and mind-blowing facts! 🚀
+
+Join us on an endless adventure… because space is not just a place; 
+it's an infinite passion and curiosity.
+            </pre>
+        </div>
+
+       
+        <p>Choose an option to continue:</p>
+        <a href="login.html">
+            <button class="button login" onclick="location.href='login.html'">Login</button>
+        </a>
+        <a href="signup.html">
+            <button class="button signup" onclick="location.href='signup.html'">Sign Up</button>
+        </a>
+
+        <p id="demo"></p>
+
+        <script>
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d;
+        </script>
+    </body>
+</html>
